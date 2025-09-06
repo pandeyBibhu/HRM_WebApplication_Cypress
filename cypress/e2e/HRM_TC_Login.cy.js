@@ -13,16 +13,16 @@ describe("HRM login Test", () => {
     cy.title().then((pageTitle) => {
     cy.log("Title of HomePage is:: " + pageTitle);
     expect(pageTitle).to.equal("OrangeHRM")
-
-});
+  })
+})
 it("Verify UserProfile",()=>{
+  cy.Login(Cypress.env("username"),Cypress.env("password"))
   loginPageActions.verifyUserProfile();
 
 })
 it("logout from the application",()=>{
+  cy.Login(Cypress.env("username"),Cypress.env("password"))
   loginPageActions.selectLogoutButton();
 })
-
-});
 
 });
