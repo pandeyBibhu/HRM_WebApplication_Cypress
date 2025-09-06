@@ -1,6 +1,9 @@
-<<<<<<< HEAD
 # HRM_WebApplication_Cypress
-=======
+
+# =======
+
+> > > > > > > 66eee79e377f0e6188f14a637a1d018a51da84ed
+
 # My Cypress Project
 
 This project is a sample Cypress testing setup that demonstrates how to write and run tests for a web application.
@@ -10,22 +13,26 @@ This project is a sample Cypress testing setup that demonstrates how to write an
 Follow these steps to create a new Cypress project from scratch:
 
 1. **Create a new folder for your project:**
+
    ```
    mkdir my-cypress-project
    cd my-cypress-project
    ```
 
 2. **Initialize a new Node.js project:**
+
    ```
    npm init -y
    ```
 
 3. **Install Cypress:**
+
    ```
    npm install cypress --save-dev
    ```
 
 4. **Open Cypress for the first time (this will scaffold the folder structure):**
+
    ```
    npx cypress open
    ```
@@ -54,17 +61,20 @@ my-cypress-project
 To get started with this project, follow these steps:
 
 1. **Clone the repository:**
+
    ```
    git clone <repository-url>
    cd my-cypress-project
    ```
 
 2. **Install dependencies:**
+
    ```
    npm install
    ```
 
 3. **Run Cypress:**
+
    ```
    npx cypress open
    ```
@@ -89,5 +99,10 @@ The `cypress.json` file is used to configure various settings for Cypress, such 
 
 ## License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License.
->>>>>>> 66eee79 (Initial commit)
+
+> > > > > > > # 66eee79 (Initial commit)
+> > > > > > >
+> > > > > > > This project is licensed under the MIT License.
+> > > > > > > 66eee79e377f0e6188f14a637a1d018a51da84ed
