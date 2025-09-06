@@ -1,0 +1,15 @@
+{
+  "name": "my-cypress-project",
+  "version": "1.0.0",
+  "description": "A sample Cypress project for testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^15.1.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
