@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="95.652" tests="7" failures="0" skipped="1">
+  <testsuite name="Root Suite" timestamp="2025-09-09T10:55:41" tests="0" file="cypress\e2e\HRM_TC_AdminDasgboard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Admin Dashboard" timestamp="2025-09-09T10:55:41" tests="7" time="95.651" failures="0">
+    <testcase name="Admin Dashboard Navigate to Admin Dashboard" time="14.555" classname="Navigate to Admin Dashboard">
+    </testcase>
+    <testcase name="Admin Dashboard Verify Admin/UserManagement breadcum path" time="11.279" classname="Verify Admin/UserManagement breadcum path">
+    </testcase>
+    <testcase name="Admin Dashboard Verify job Dropdown item list" time="13.389" classname="Verify job Dropdown item list">
+    </testcase>
+    <testcase name="Admin Dashboard Verify Admin Organisaton Dropdown item list" time="13.465" classname="Verify Admin Organisaton Dropdown item list">
+    </testcase>
+    <testcase name="Admin Dashboard Verify Admin Qualifications Dropdown item list" time="13.373" classname="Verify Admin Qualifications Dropdown item list">
+    </testcase>
+    <testcase name="Admin Dashboard Verify Add Skills" time="14.080" classname="Verify Add Skills">
+    </testcase>
+  </testsuite>
+</testsuites>

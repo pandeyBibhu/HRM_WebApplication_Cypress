@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-09T16:18:59.074Z",
+    "end": "2025-09-09T16:19:16.242Z",
+    "duration": 17168,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2ba8e2a-a8a7-4cab-a044-3bd288ae2984",
+      "title": "",
+      "fullFile": "cypress\\e2e\\HRM_TC_Login.cy.js",
+      "file": "cypress\\e2e\\HRM_TC_Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "267df19a-2669-4613-8a2a-45294218b29d",
+          "title": "HRM login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform login using UN and Pwd",
+              "fullTitle": "HRM login Test Perform login using UN and Pwd",
+              "timedOut": null,
+              "duration": 6911,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HRM_loginPageActions.default.enterUserName(Cypress.env(\"username\"));\n_HRM_loginPageActions.default.enterPassword(Cypress.env(\"password\"));\n_HRM_loginPageActions.default.submitLoginButton();\ncy.title().then(pageTitle => {\n  cy.log(\"Title of HomePage is:: \" + pageTitle);\n  expect(pageTitle).to.equal(\"OrangeHRM\");\n});",
+              "err": {},
+              "uuid": "6f5c43ea-766c-4389-82be-8e3963010f97",
+              "parentUUID": "267df19a-2669-4613-8a2a-45294218b29d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify UserProfile",
+              "fullTitle": "HRM login Test Verify UserProfile",
+              "timedOut": null,
+              "duration": 3797,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.Login(Cypress.env(\"username\"), Cypress.env(\"password\"));\n_HRM_loginPageActions.default.verifyUserProfile();",
+              "err": {},
+              "uuid": "e54af96c-c4a3-4da2-8a5b-cfbd8cf5f26a",
+              "parentUUID": "267df19a-2669-4613-8a2a-45294218b29d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "logout from the application",
+              "fullTitle": "HRM login Test logout from the application",
+              "timedOut": null,
+              "duration": 6359,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.Login(Cypress.env(\"username\"), Cypress.env(\"password\"));\n_HRM_loginPageActions.default.selectLogoutButton();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'response')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'response')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://opensource-demo.orangehrmlive.com/web/dist/js/app.js?v=1721393199309:1:11603)\n    at async Dt.request (https://opensource-demo.orangehrmlive.com/web/dist/js/chunk-vendors.js?v=1721393199309:144:77071)\n    at Dt.request (https://opensource-demo.orangehrmlive.com/web/dist/js/chunk-vendors.js?v=1721393199309:144:77164)",
+                "diff": null
+              },
+              "uuid": "0d78cf87-551b-4687-a7e8-7ee4eae0ccd4",
+              "parentUUID": "267df19a-2669-4613-8a2a-45294218b29d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6f5c43ea-766c-4389-82be-8e3963010f97",
+            "e54af96c-c4a3-4da2-8a5b-cfbd8cf5f26a"
+          ],
+          "failures": [
+            "0d78cf87-551b-4687-a7e8-7ee4eae0ccd4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 17067,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reporterEnabled": "spec, mocha-junit-reporter",
+        "mochaJunitReporterReporterOptions": {
+          "mochaFile": "cypress/results/results-[hash].xml",
+          "toConsole": false
+        }
+      },
+      "version": "6.2.0"
+    }
+  }
+}

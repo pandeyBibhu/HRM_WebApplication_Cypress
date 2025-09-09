@@ -1,6 +1,10 @@
 module.exports = {
-  reporter: "cypress-multi-reporters",
+  reporter: "mochawesome",
   reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: false,
+    json: true,
     reporterEnabled: "spec, mocha-junit-reporter",
     mochaJunitReporterReporterOptions: {
       mochaFile: "cypress/results/results-[hash].xml", // Jenkins will read these

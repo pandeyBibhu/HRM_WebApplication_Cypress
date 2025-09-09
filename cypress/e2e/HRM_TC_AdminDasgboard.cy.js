@@ -45,9 +45,11 @@ describe("Admin Dashboard", () => {
     hrm_AdminPageActions.verifyToastORSuccessfullAlert();
   });
   it.skip("Verify delete skills",()=>{
+
     hrm_AdminPageActions.clickOnAdminDashboard();
     hrm_AdminPageActions.checkQualificationMenuDropdownList("Skills");
-    hrm_AdminPageActions.addSkills("sdsdsdsdsdsdsdsdsdsd","Automation with Cypress");
+    let rendonCharacter=hrm_AdminPageActions.generateRandomAlphaNumeric(6);
+    hrm_AdminPageActions.addSkills(`Automation+${rendonCharacter}`,"Automation with Cypress");
     hrm_AdminPageActions.verifyToastORSuccessfullAlert();
     hrm_AdminPageActions.deleteSkills("sdsdsdsdsdsdsdsdsdsd")
     hrm_AdminPageActions.verifyDeletedSuccessfully();
