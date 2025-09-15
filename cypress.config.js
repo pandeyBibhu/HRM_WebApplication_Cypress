@@ -1,16 +1,19 @@
 module.exports = {
-  reporter: "mochawesome",
+  reporter: "cypress-multi-reporters",
   reporterOptions: {
-    reportDir: "cypress/results",
-    overwrite: true,
-    html: true,
-    json: true,
-    reporterEnabled: "spec, mocha-junit-reporter",
+    reporterEnabled: "spec, mocha-junit-reporter, mochawesome",
     mochaJunitReporterReporterOptions: {
-      mochaFile: "cypress/results/results-[hash].xml", // Jenkins will read these
+      mochaFile: "cypress/results/results-[hash].xml", // ✅ XML for Jenkins
       toConsole: false,
     },
+    mochawesomeReporterOptions: {
+      reportDir: "cypress/reports/mocha",
+      overwrite: false,
+      html: true,
+      json: true,
+    },
   },
+
   projectId: "xds656",
   fixturesFolder: "cypress/fixtures",
   viewportWidth: 1280,
@@ -18,15 +21,15 @@ module.exports = {
   video: true,
   screenshotOnRunFailure: true,
   e2e: {
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      // add event listeners if needed
+    },
     baseUrl: "https://opensource-demo.orangehrmlive.com",
     env: {
       username: "Admin",
       password: "admin123",
     },
     specPattern: ["cypress/e2e/**/*.cy.{js,jsx,ts,tsx}", "cypress/e2e/**/*.js"],
-    // Add this line to include .js files
-
     supportFile: "cypress/support/e2e.js",
   },
 };

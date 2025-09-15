@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="19.043" tests="3" failures="1">
-  <testsuite name="Root Suite" timestamp="2025-09-06T20:14:22" tests="0" file="cypress\e2e\HRM_TC_Login.cy.js" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="15.110" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-09-10T19:38:51" tests="0" file="cypress\e2e\HRM_TC_Login.cy.js" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="HRM login Test" timestamp="2025-09-06T20:14:22" tests="3" time="19.041" failures="1">
-    <testcase name="HRM login Test Perform login using UN and Pwd" time="6.941" classname="Perform login using UN and Pwd">
+  <testsuite name="HRM login Test" timestamp="2025-09-10T19:38:51" tests="3" time="15.106" failures="1">
+    <testcase name="HRM login Test Perform login using UN and Pwd" time="5.041" classname="Perform login using UN and Pwd">
     </testcase>
-    <testcase name="HRM login Test Verify UserProfile" time="4.420" classname="Verify UserProfile">
+    <testcase name="HRM login Test Verify UserProfile" time="3.695" classname="Verify UserProfile">
     </testcase>
     <testcase name="HRM login Test logout from the application" time="0.000" classname="logout from the application">
       <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.

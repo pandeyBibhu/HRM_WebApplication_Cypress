@@ -4,7 +4,11 @@
   "description": "A sample Cypress project for testing.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "test:run": "cypress run",
+   "report:merge": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochawesome.json",
+  "report:generate": "marge cypress/reports/mochawesome.json --reportDir cypress/reports/html",
+  "report": "npm run test && npm run report:merge && npm run report:generate"
   },
   "devDependencies": {
     "cypress": "^15.1.0",
